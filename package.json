@@ -1,0 +1,12 @@
+{
+  "name": "my-product-site",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^7.1.3"
+  }
+}
