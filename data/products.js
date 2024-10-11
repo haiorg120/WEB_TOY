@@ -125,7 +125,7 @@ const products = [
     "name": "VersatileBot",
     "description": "VersatileBot is suitable for various tasks, catering to both personal and commercial needs.",
     "price": "$5,800",
-    "image": "https://i.pinimg.com/originals/44/75/04/4475043264e62f5c53e0e8fd6d571b4f.jpghttps://pin.it/22pbqYVbwhttps://i.pinimg.com/236x/7d/2d/82/7d2d82344f750072083a176a1b368b77.jpg"
+    "image": "https://i.pinimg.com/originals/44/75/04/4475043264e62f5c53e0e8fd6d571b4f.jpg"
   }
 ];
 
