@@ -6,14 +6,14 @@ const products = [
     "name": "RoboWorker",
     "description": "RoboWorker is engineered for high-efficiency tasks in manufacturing and logistics.",
     "price": "$4,200",
-    "image": "https://i.pinimg.com/564x/f1/7d/db/f17ddb244e3f2f6a720e61cd3f8161fb.jpg"
+    "image": "https://i.pinimg.com/originals/1e/f2/db/1ef2db63dea6902dc12415dd88660acc.jpg"
   },
   {
     "id": 2,
     "name": "HomeBot",
     "description": "HomeBot is a smart robot designed for home cleaning and maintenance with user-friendly features.",
     "price": "$1,500",
-    "image": "https://i.pinimg.com/236x/e2/b1/45/e2b14504a109557cb744d3a9856987ae.jpg"
+    "image": "https://i.pinimg.com/originals/90/40/a6/9040a62d26077607edeac5118596674c.jpg"
   },
   {
     "id": 3,
