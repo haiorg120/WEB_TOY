@@ -20,14 +20,14 @@ const products = [
     "name": "SmartSolver",
     "description": "SmartSolver comes with advanced AI for tackling complex tasks in various environments.",
     "price": "$8,500",
-    "image": "https://i.pinimg.com/236x/dc/43/68/dc4368160e34d488a8c3a6c703ec017d.jpg"
+    "image": "https://i.pinimg.com/originals/f1/46/d1/f146d1fe22ba9a51dc946f5886d242ed.jpg"
   },
   {
     "id": 4,
     "name": "EduBot",
     "description": "EduBot is designed to facilitate learning in schools, providing hands-on programming experience.",
     "price": "$600",
-    "image": "https://i.pinimg.com/236x/fd/c8/f8/fdc8f8d6a56a2e33c3b4aa4c167c2572.jpg"
+    "image": "https://i.pinimg.com/564x/6b/0b/51/6b0b517fead3bf933132b918e4472e85.jpg"
   },
   {
     "id": 5,
