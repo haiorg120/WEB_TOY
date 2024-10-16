@@ -3,31 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Home - My Product Site</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
-    <main class="container my-4">
-        <h2 class="text-center">Our Products</h2>
-        <div class="row product-list">
+    <main>
+        <h2>Our Products</h2>
+        <div class="product-list">
             {{#each products}}
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4"> <!-- Thay đổi col-lg-2 để hiển thị 6 sản phẩm trên màn hình lớn -->
-                    <div class="card h-100">
-                        <img src="{{this.image}}" class="card-img-top" alt="{{this.name}}">
-                        <div class="card-body">
-                            <h3 class="card-title">{{this.name}}</h3>
-                            <p class="card-text">{{this.description}}</p>
-                            <p class="card-text"><strong>Price: {{this.price}}</strong></p>
-                            <a href="/product/{{this.id}}" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
+                <div class="product-item">
+                    <img src="{{this.image}}" alt="{{this.name}}">
+                    <h3>{{this.name}}</h3>
+                    <p>{{this.description}}</p>
+                    <p>Price: {{this.price}}</p>
+                    <a href="/product/{{this.id}}">View Details</a>
                 </div>
             {{/each}}
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 /* Reset mặc định của các trình duyệt */
 * {
     margin: 0;
@@ -5,29 +7,37 @@
     box-sizing: border-box;
 }
 
-.product-item img {
-    width: 100%;              /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng container */
-    height: 200px;            /* Đặt chiều cao cố định cho tất cả hình ảnh */
-    object-fit: cover;        /* Đảm bảo hình ảnh được cắt phù hợp mà không bị biến dạng */
-    border-bottom: 1px solid #ddd;
-}
-
-
 /* Đặt chiều cao 100% cho HTML và body */
 html, body {
     height: 100%;
     font-family: Arial, sans-serif;
 }
 
-/* Sử dụng flexbox để đảm bảo footer ở dưới */
+/* Cấu trúc chung cho layout */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Nội dung chính */
 main {
-    flex: 1; /* Phần nội dung sẽ chiếm khoảng trống còn lại giữa header và footer */
+    flex: 1;
+    padding: 20px;
 }
 
 /* Footer */
@@ -36,50 +46,101 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+    position: relative;
     width: 100%;
 }
 
-        /* Thêm nền màu hồng cho body */
-        body {
-            background-color: #c0bccf; /* Màu hồng nhạt */
-        }
+/* Danh sách sản phẩm */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
 
-        /* Tạo hiệu ứng hover và bo viền tròn cho ảnh */
-        .product-image-wrapper {
-            border-radius: 15px;  /* Bo tròn góc của khung chứa ảnh */
-            overflow: hidden;     /* Ẩn phần ảnh vượt quá khung */
-            transition: transform 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Thêm bóng đổ nhẹ */
-            text-align: center;   /* Căn giữa hình ảnh */
-        }
+/* Mục sản phẩm */
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 220px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
 
-        .product-image-wrapper img {
-            max-width: 80%;       /* Giới hạn chiều rộng tối đa của ảnh */
-            height: auto;         /* Giữ nguyên tỉ lệ ảnh */
-            transition: transform 0.4s ease;
-        }
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-        .product-image-wrapper:hover img {
-            transform: scale(1.05); /* Tạo hiệu ứng zoom khi hover */
-        }
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
 
-        /* Tùy chỉnh nút để đẹp hơn */
-        .btn-custom {
-            background-color: #007bff;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
+.product-item h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0 10px 0;
+}
 
-        .btn-custom:hover {
-            background-color: #0056b3;
-        }
+.product-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    padding: 0 10px;
+}
 
-        /* Cân chỉnh chi tiết sản phẩm */
-        .product-details {
-            padding-top: 30px;
-            padding-left: 20px;
-        }
+.product-item .price {
+    font-size: 16px;
+    color: #e60000;
+    margin-bottom: 15px;
+}
+
+.product-item a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item a:hover {
+    background-color: #555;
+}
+
+
+.back-to-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-to-home:hover {
+    background-color: #0056b3;
+}
+/* Đặt kích thước cố định cho ảnh sản phẩm trong .product-detail */
+.product-detail img {
+    width: 426px; /* Chiều rộng cố định */
+    height: 328px; /* Chiều cao cố định */
+    object-fit: contain; /* Hiển thị toàn bộ ảnh mà không bị cắt */
+    
+    display: block; /* Đảm bảo ảnh là phần tử block */
+    margin: 0 auto; /* Căn giữa ảnh */
+   
+}
+
+
+
