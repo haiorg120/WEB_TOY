@@ -95,12 +95,12 @@ footer {
     padding: 0 10px;
 }
 
-.product-item .price {
-    font-size: 16px;
-    color: #e60000;
-    margin-bottom: 15px;
+.product-price {
+    font-size: 1.2em;
+    color: #e67e22; /* Màu cam */
+    font-weight: bold;
+    margin-top: 8px;
 }
-
 .product-item a {
     display: inline-block;
     background-color: #333;
