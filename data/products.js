@@ -5,7 +5,7 @@ const products = [
     "id": 1,
     "name": "Labubu Classic",
     "description": "Labubu Classic is the original design featuring the iconic cute face and charming expression, perfect for any toy collection.",
-    "price": "$1,000",
+    "price": "$5,000",
     "image": "https://i.pinimg.com/736x/5f/b1/c8/5fb1c8b1a225641edccd72238eaf87d0.jpg"
   },
   {
