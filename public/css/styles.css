@@ -125,7 +125,14 @@ footer {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    display: inline-block; /* Make the link behave like a button */
+    margin-top: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 .back-to-home:hover {
@@ -133,13 +140,29 @@ footer {
 }
 /* Đặt kích thước cố định cho ảnh sản phẩm trong .product-detail */
 .product-detail img {
-    width: 426px; /* Chiều rộng cố định */
-    height: 328px; /* Chiều cao cố định */
-    object-fit: contain; /* Hiển thị toàn bộ ảnh mà không bị cắt */
-    
-    display: block; /* Đảm bảo ảnh là phần tử block */
-    margin: 0 auto; /* Căn giữa ảnh */
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Round the corners of the image */
    
+}
+.product-detail {
+    max-width: 400px; /* Limit the width of the box */
+    margin: 20px auto; /* Center the box horizontally */
+    padding: 20px; /* Add padding inside the box */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center the text */
+    background-color: #f9f9f9; /* Light background color */
+}
+.product-detail h2 {
+    margin: 15px 0; /* Margin around the product name */
+    font-size: 24px; /* Size of the product name */
+}
+
+.product-detail p {
+    margin: 10px 0; /* Margin around the paragraphs */
+    font-size: 16px; /* Size of the description and price text */
 }
 
 
